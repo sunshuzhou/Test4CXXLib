@@ -1,0 +1,6 @@
+project(Test4ProgramOptions)
+add_compile_options(-std=c++0x)
+add_executable(${PROJECT_NAME} main.cpp)
+add_executable(multi_source multi_source.cpp)
+target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
+target_link_libraries(multi_source ${Boost_LIBRARIES})
