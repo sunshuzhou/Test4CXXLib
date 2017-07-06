@@ -1,0 +1,11 @@
+enclave {
+
+    trusted {
+        public void test();
+    };
+
+    untrusted {
+        void abc();
+    };
+
+};
