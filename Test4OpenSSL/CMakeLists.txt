@@ -19,5 +19,6 @@ set(LIBRARIES ${LIBRARIES} ${OPENSSL_CRYPTO_LIBRARY})
 set(CMAKE_CXX_STANDARD 11)
 
 aux_source_directory(. MAIN_SRC)
-add_executable(${PROJECT_NAME} ${MAIN_SRC})
+aux_source_directory(rfc RFC_SRC)
+add_executable(${PROJECT_NAME} ${MAIN_SRC} ${RFC_SRC})
 target_link_libraries(${PROJECT_NAME} ${LIBRARIES})

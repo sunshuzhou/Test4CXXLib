@@ -10,4 +10,6 @@ void PrintHexString(const void *data, int length);
  * \param count 
  */
 void GenerateRandom(int count);
+
+void RFC6070();
 #endif
